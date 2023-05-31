@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link href="./style/style.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap" rel="stylesheet">
+  
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Interactive rating component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+
+
+<body>
+
+     <!-- Rating state start -->
+ <section class="main" id="mainz">
+   <img src="./images/icon-star.svg" alt="Estrela de referência para Classificação">
+    <div class="main-text">
+      <h1>How did we do?</h1>
+      <p>Please let us know how we did with your support request. All feedback is appreciated 
+      to help us improve our offering!</p>
+    </div>
+
+    <div class="classificação-bar">
+      <button class="button-class" id="button1" onclick="ButtonSelection(1)">1</button>
+      <button class="button-class" id="button2" onclick="ButtonSelection(2)">2</button>
+      <button class="button-class" id="button3" onclick="ButtonSelection(3)">3</button>
+      <button class="button-class" id="button4" onclick="ButtonSelection(4)">4</button>
+      <button class="button-class" id="button5" onclick="ButtonSelection(5)">5</button>
+    </div> 
+
+    <div>
+      
+      <button class="button-submit" id="submit" onclick="ConclusionSubmit()">SUBMIT</button>
+    </div>
+
+      <!-- Rating state end -->
+ </section>
+
+  <!-- Thank you state start -->
+  <section class="main-thanks" id="maintz" style="display: none;">
+    <div>
+      <img src="./images/illustration-thank-you.svg" alt="Imagem Ilustrativa, Para envio de Classificação">
+       <p id="output-class"> You selected <span id="resultclass"></span> out of 5 </p>
+    </div>
+
+    <div>
+       <h1>Thank you!</h1>
+
+       <p>We appreciate you taking the time to give a rating. If you ever need more support, 
+       don’t hesitate to get in touch!</p>
+    </div>
+
+  <!-- Thank you state end -->
+  </section>
+
+  <footer>
+      <div class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+        Coded by <a href="#">Matheus Marques da Silva</a>.
+      </div>
+  </footer>
+  <script src="./js/script.js"></script>
+</body>
+
+</html>
